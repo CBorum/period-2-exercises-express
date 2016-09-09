@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    h1= title
+    form(action="/storejoke" method="POST")
+        label joke:
+        input(type="text" name="jokeString")
